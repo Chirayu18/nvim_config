@@ -7,7 +7,8 @@ echo "================ Installing nvim ========="
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 rm -rf ~/nvim
 tar -C ~/ -xzf nvim-linux-x86_64.tar.gz
-echo "export PATH=\"$PATH:/opt/nvim-linux-x86_64/bin\"" >> ~/.bashrc
+echo "export PATH=\"\$PATH:~/nvim-linux-x86_64/bin\"" >> ~/.bashrc
 echo "alias vi=nvim" >> ~/.bashrc
+echo "eval \"\$(zoxide init bash)\""
 echo "================ Configuring nvim ========="
 git clone https://github.com/Chirayu18/nvim_config ~/.config/nvim

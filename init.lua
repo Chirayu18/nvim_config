@@ -49,7 +49,7 @@ map("v", "<leader>P", '"0P', opts)
 map("n", "<leader>no", ":nohl<CR>", opts)
 map("n", "<leader>w", ":w<CR>", opts)
 map("n", "<leader>W", ":wq!<CR>", opts)
-map("n", "<leader>q", ":bd<CR>", opts)
+map("n", "<leader>q", ":q<CR>", opts)
 map("n", "<leader>Q", ":qall!<CR>", opts)
 
 map("n", "<C-b>", [[<Cmd>lua require"fzf-lua".buffers()<CR>]], {})
