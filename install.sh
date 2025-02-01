@@ -9,6 +9,6 @@ rm -rf ~/nvim
 tar -C ~/ -xzf nvim-linux-x86_64.tar.gz
 echo "export PATH=\"\$PATH:~/nvim-linux-x86_64/bin\"" >> ~/.bashrc
 echo "alias vi=nvim" >> ~/.bashrc
-echo "eval \"\$(zoxide init bash)\""
+echo "eval \"\$(zoxide init bash)\"" >> ~/.bashrc
 echo "================ Configuring nvim ========="
 git clone https://github.com/Chirayu18/nvim_config ~/.config/nvim
